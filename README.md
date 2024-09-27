@@ -4,14 +4,13 @@ This is a full-stack application that allows users to submit and retrieve person
 ## Technologies Used
 
 - **Backend**: Spring Boot, Spring Data JPA, H2 Database
-- **Frontend**: Angular, RxJS, HttpClient
+- **Frontend**: Angular, HttpClient
 - **Build Tool**: Maven
 
 ## Features
 
 - Submit person information (name, age, title and hometown).
 - Retrieve a list of all persons.
-- View person details by ID.
 
 ## Getting Started
 
@@ -24,8 +23,6 @@ This is a full-stack application that allows users to submit and retrieve person
 ### Backend Setup
 
 1. Clone the repository:
-
-   ```bash
    git clone https://github.com/shilpamungi/_DataEntryApplication.git
 
 2. Run the application
@@ -33,22 +30,17 @@ This is a full-stack application that allows users to submit and retrieve person
    The backend will run on http://localhost:8080.
 
  ###  Frontend Setup
-1. Navigate to the Angular project directory:
-cd angular-ui
-
-2. Install dependencies:
-npm install
-
-3. Serve the Angular application:
+ Setup steps available in README.md of Angular UI Application.
+ 1. Serve the Angular application along with springboot so that they work together.
 ng serve
 
 The frontend will run on http://localhost:4200.
 
 ### Usage
 Open your web browser and go to http://localhost:4200.
-Fill in the form to add a person’s name, age, tutle and hometown.
-Submit the form to see the new entry listed below.
-You can also search for all the person's added.
+Fill in the form to add a person’s name, age, title and hometown.
+Name and Title are required fields which shows error message when not entered. Also Submit button will be disabled untill required fields are entered.
+Submit the form to see success message in another page and new entry listed in table alongwith all previous entries.
 
    
 
