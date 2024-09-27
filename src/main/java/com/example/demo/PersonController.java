@@ -26,4 +26,9 @@ public class PersonController {
     public Person submitForm(@RequestBody Person person) {
     	return personRepository.save(person);
     }
+    
+    @PostMapping("/removeAll")
+    public void removeAll() {
+    	 personRepository.deleteAll();
+    }
 }
